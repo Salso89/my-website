@@ -15,16 +15,29 @@
 
         #header{
             background-color: aqua;
-            padding: 20px;
+            padding-bottom: 70px;
+            position: relative;
+            bottom: 0;
         }
 
         #image img{
+            float: right;
             width: 120px
         }
 
-        #img {
-            position: absolute;
-            right: 0;
+        ul{
+            color: aliceblue;
+        }
+
+        p{
+            color: aliceblue;
+        }
+
+        .text-bottom{
+
+            position:relative;
+            top: 40px;
+            left: 20px;
         }
 
 
@@ -35,14 +48,28 @@
 
 <div id="header">
     <div id="image">
-    <img style="text-align: right;" src = "images/glasses.jpg" alt="profile picture">
+    <img style="text-align: center;" src = "images/glasses.jpg" alt="profile picture">
     </div>
-    <h1 style="text-align: right;">Houda El Yandouzi</h1></div>
+    <h1 class="text-bottom">Houda El Yandouzi</h1></div>
 <div>
     
-
-    <h2>About</h2>
-    <p>This is information about Houda</p>
+    <h2>About Houda</h2>
+    <p>Houda is a fun and interesting individual with a keen interest in languages the </p>
+    <p>The languages are as follows:</p>
+    <ul>
+        <li> Arabic</li>
+        <li> French</li>
+        <li> Spanish</li>
+        <li> Italian</li>
+        <li> English</li>
+    </ul>
+    <h3>More information:</h3>
+    <ul>
+        <li> Age: 30</li>
+        <li> Hair Colour: Brown</li>
+        <li> Nationality: Italian</li>
+        <li> Job Title: Tech Consultant</li>
+    </ul>
 </div>
 
       
