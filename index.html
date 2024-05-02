@@ -48,8 +48,11 @@
 
 <div id="header">
     <div id="image">
-    <img style="text-align: center;" src = "images/glasses.jpg" alt="profile picture">
-    </div>
+    <img style="text-align: center;" src = "images/glasses.jpg" alt="profile picture" id="button" onclick="playSong()">
+    <audio id="audioPlayer">
+        <source src="audio/stomps-and-claps-percussion-and-rhythm-141190.mp3" type="audio/mp3">
+    </audio>
+</div>
     <h1 class="text-bottom">Houda El Yandouzi</h1></div>
 <div>
     
@@ -70,9 +73,23 @@
         <li> Nationality: Italian</li>
         <li> Job Title: Tech Consultant</li>
     </ul>
+
+    
 </div>
 
       
     
 </body>
+
+<script>
+    function playSong(){
+
+        var audio = document.getElementById('audioPlayer');
+        if(audio.paused){
+            audio.play();
+        }else{
+            audio.pause();
+        }
+        }
+</script>
 </html>
